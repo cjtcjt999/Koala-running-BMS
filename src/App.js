@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { message } from 'antd';
+import { withRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    // 判断跳转路由不等于当前路由
+    const nextPathname = nextProps.location.pathname;
+    if (nextPathname !== this.props.location.pathname && nextPathname.substring(nextPathname.length - 5) !== 'login' && nextPathname.length !== 1) {
+      const userInfo = localStorage.getItem("userInfo");
+      if (!userInfo) {
+        message.error('请先进行登录');
+        window.location.href=('/#/login')
+      }
+    }
+  }
+
+  render(){
+    return (
+      <div>
+        {this.props.children}
+      </div>
+    );
 }
-
-export default App;
+}
+export default withRouter(App);

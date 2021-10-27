@@ -1,0 +1,175 @@
+.bg_top{
+  height: 640px;
+  background: -webkit-linear-gradient(top, rgb(37, 32, 127), rgb(8, 199, 218));
+}
+.bg_bottom{
+  width: 100%;
+  height: 300px;
+  background: #ffffff;
+  display:flex;
+  justify-content: center;
+}
+.login_cur_first_animation {
+  opacity: 1 !important;
+  animation: mymovefirst 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  //animation-delay:2s;
+  /* Safari and Chrome */
+  -webkit-animation: mymovefirst 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  //-webkit-animation-delay:2s;
+}
+
+@keyframes mymovefirst {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+  from {
+    top: 250px;
+  }
+  to {
+    top: 160px;
+  }
+}
+
+.login_cur_second_animation {
+  opacity: 1 !important;
+  animation: mymoveSecond 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  //animation-delay:2s;
+  /* Safari and Chrome */
+  -webkit-animation: mymoveSecond 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  //-webkit-animation-delay:2s;
+}
+
+@keyframes mymoveSecond {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+  from {
+    top: 250px;
+  }
+  to {
+    top: 132px;
+  }
+}
+
+.login_cur_third_animation {
+  opacity: 1 !important;
+  animation: mymoveThird 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  //animation-delay:2s;
+  /* Safari and Chrome */
+  -webkit-animation: mymoveThird 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  //-webkit-animation-delay:2s;
+}
+
+@keyframes mymoveThird {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+  from {
+    top: 140px;
+  }
+  to {
+    top: 80px;
+  }
+}
+.bg_top{
+  .slick-list{
+    height:100%;
+  }
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 600px;
+    padding: 0em 9.5em;
+    overflow: hidden;
+}
+}
+.sysname {
+  width: 100%;
+  padding-top: 26px;
+  font-size: 20px;
+  color: #343f51;
+  text-align: left;
+  font-weight: 800;
+}
+.mintabs-active .ant-tabs-tab-active {
+  background: none;
+  font-size: 14px;
+}
+.mintabs-active .ant-tabs-nav-container {
+  font-size: 14px;
+}
+.normal_text_size {
+  font-size: 14px;
+}
+.login_form_item {
+  height:28px !important;
+  margin: 10px 0px !important;
+  width: 100% !important;
+}
+
+.login_input {
+  border: unset !important;
+  border-radius: unset !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+.login_label_color {
+  color: #7e92a4;
+}
+.account-captcha-img {
+  width: 60px;
+  height: 25px;
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+.login_verity {
+  position: relative;
+  float: right;
+  top: -32px;
+}
+.login-btn {
+  display: inline-block;
+  width: 165px;
+  height: 35px;
+  margin-top:20px;
+  /*background: #00a792;*/
+  background: -webkit-linear-gradient(left, #00dafc, #14a3fa);
+  color: #ffffff !important;
+  /*background: url("imgs/btn-login.png") no-repeat center;*/
+  border: none;
+  outline: none;
+}
+.login-btn:hover,
+.login-btn:focus {
+  background: -webkit-linear-gradient(left, #00dafc, #14a3fa) !important;
+  color: #ffffff !important;
+}
